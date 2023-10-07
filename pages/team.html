@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hero - Free Bulma template</title>
+        <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!-- Bulma Version 0.9.0-->
+        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/hero.css">
+        <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    </head>
+    <body>
+        <section class="hero is-info is-medium is-bold">
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="../">
+                                <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">
+                            </a>
+                            <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div id="navbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li><a href="../index.html">Home</a></li>
+                                        <li><a href="proposal.html">Proposal</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                    <!-- <span class="navbar-item">
+                                        <a class="button is-white is-outlined" href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/hero.html">
+                                            <span class="icon">
+                                                <i class="fa fa-github"></i>
+                                            </span>
+                                            <span title="Hello from the other side">View Source</span>
+                                        </a>
+                                    </span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">
+                    Team
+                    </h1>
+                    <h2 class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    Iqbal
+                  </p>
+                  <button class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </header>
+                <div class="card-content">
+                    <div class="content-aboutus">
+                        <!-- untuk menampilkan data pada main.js data rafi -->
+                        <ul>
+                            <li><strong>NPM:</strong> <span id="npm-iqbal"></span></li>
+                            <li><strong>Nama:</strong> <span id="nama-iqbal"></span></li>
+                            <li><strong>Kelas:</strong> <span id="kelas-iqbal"></span></li>
+                            <li><strong>Email:</strong> <span id="email-iqbal"></span></li>
+
+                        </ul><br>
+                    </div>
+              </div>
+
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    Rafi
+                  </p>
+                  <button class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </header>
+                <div class="card-content">
+                    <div class="content-aboutus">
+                        <!-- untuk menampilkan data pada main.js data rafi -->
+                        <ul>
+                            <li><strong>NPM:</strong> <span id="npm-rafi"></span></li>
+                            <li><strong>Nama:</strong> <span id="nama-rafi"></span></li>
+                            <li><strong>Kelas:</strong> <span id="kelas-rafi"></span></li>
+                            <li><strong>Email:</strong> <span id="email-rafi"></span></li>
+
+                        </ul><br>
+                    </div>
+                </div>
+              </div>
+        </section>
+
+        <script type="module" src="../js/main.js"></script>
+        <script type="module" src="../js/tabs.js"></script>
+        <script type="module" src="./js/bulma.js"></script>
+    </body>
+</html>
