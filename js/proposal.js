@@ -1,24 +1,26 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Data JSON proposal
-    const proposalData = {
-        "Judul": "Pengaduan Masyarakat",
-        "Konsep": "Sistem Pengaduan Masyarakat: Meningkatkan Partisipasi Warga dalam Menangani Keluhan dan Aspirasi di Kecamatan Sukasari",
-        "Untuk": "Daerah Kampus ULBI",
-        "Logo": "",
-        "Prodi": "Diploma IV Teknik Informatika Kampus Universitas Logistik Dan Bisnis Internasional 2023"
-    };
 
-    // Memilih elemen HTML untuk menampilkan data
-    const judulElement = document.getElementById("judul-proposal");
-    const konsepElement = document.getElementById("konsep-proposal");
-    const untukElement = document.getElementById("untuk-proposal");
-    const logoElement = document.getElementById("logo-proposal");
-    const prodiElement = document.getElementById("prodi-proposal");
 
-    // Menampilkan data JSON pada elemen HTML
-    judulElement.textContent = proposalData.Judul;
-    konsepElement.textContent = proposalData.Konsep;
-    untukElement.textContent = proposalData.Untuk;
-    logoElement.src = proposalData.Logo;
-    prodiElement.textContent = proposalData.Prodi;
+document.addEventListener("DOMContentLoaded", async () => {
+    try {
+        const response = await fetch('../filejson/proposal.json'); // Mengambil file userData.json
+        if (!response.ok) {
+            throw new Error('Failed to fetch data');
+        }
+        const userData = await response.json();
+
+        // Select elements by their IDs
+        const judulElement = document.getElementById("judul-proposal");
+        const konsepElement = document.getElementById("konsep-proposal");
+        const prodiElement = document.getElementById("prodi-proposal");
+
+
+        // Populate HTML elements with user data
+        judulElement.textContent = userData.Judul;
+        konsepElement.textContent = userData.Konsep;
+        prodiElement.textContent = userData.Prodi;
+
+
+    } catch (error) {
+        console.error('Error:', error);
+    }
 });
